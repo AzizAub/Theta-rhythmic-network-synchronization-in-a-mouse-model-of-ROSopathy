@@ -13,7 +13,6 @@ This repository contains the implementation of a master thesis project focused o
 - [Usage](#usage)
 - [Models](#models)
 - [Results](#results)
-- [Citation](#citation)
 
 ## Features
 
@@ -147,11 +146,3 @@ python TypeClassification/Checker.py
 - **Deep Learning Model**: Achieves low accuracy on balanced dataset
 - **SVM Model**: Achieves high accuracy (96%) 
 - **Validation Strategy**: Aggregated predictions over full recordings
-
-## Advanced Features
-
-### Parallel Processing
-Feature extraction is parallelized using joblib:
-```python
-feats = Parallel(n_jobs=-1)(delayed(process_file)(fpath, scales, fs, window_sec) for fpath in file_list)
-```
